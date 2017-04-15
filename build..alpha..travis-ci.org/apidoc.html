@@ -51,7 +51,7 @@
 
         href="https://github.com/bda-research/node-crawler"
 
-    >crawler (v1.0.3)</a>
+    >crawler (v1.0.4)</a>
 </h1>
 <h4>Crawler is a web spider written with Nodejs. It gives you the full power of jQuery on the server to parse a big number of pages as they are downloaded, asynchronously</h4>
 <div class="apidocSectionDiv"><a
@@ -63,8 +63,26 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.crawler.crawler">
+            function <span class="apidocSignatureSpan"></span>crawler
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.crawler.super_">
             function <span class="apidocSignatureSpan">crawler.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.crawler.toString">
+            function <span class="apidocSignatureSpan">crawler.</span>toString
             <span class="apidocSignatureSpan">()</span>
             </a>
 
@@ -79,6 +97,29 @@
 
 
     <h2>
+        <a href="#apidoc.element.crawler.crawler" id="apidoc.element.crawler.crawler">
+        function <span class="apidocSignatureSpan"></span>crawler
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Crawler(options) {
+    var self = this;
+
+    options = options||{};
+    if([&#x22;onDrain&#x22;, &#x22;preRequest&#x22;,&#x22;cache&#x22;].some(key =&#x3e; key in options)){
+	throw new Error(&#x22;Support for &#x27;onDrain&#x27;, &#x27;preRequest&#x27;, &#x27;cache&#x27; has been removed! For more details, see https://github.com/bda-research
+/node-crawler&#x22;);
+    }
+
+    self.init(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
         <a href="#apidoc.element.crawler.super_" id="apidoc.element.crawler.super_">
         function <span class="apidocSignatureSpan">crawler.</span>super_
         <span class="apidocSignatureSpan">()</span>
@@ -87,6 +128,21 @@
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function EventEmitter() {
   EventEmitter.init.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.crawler.toString" id="apidoc.element.crawler.toString">
+        function <span class="apidocSignatureSpan">crawler.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return toString;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
