@@ -1,11 +1,13 @@
-# api documentation for  [crawler (v1.0.3)](https://github.com/bda-research/node-crawler)  [![npm package](https://img.shields.io/npm/v/npmdoc-crawler.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-crawler) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-crawler.svg)](https://travis-ci.org/npmdoc/node-npmdoc-crawler)
+# api documentation for  [crawler (v1.0.4)](https://github.com/bda-research/node-crawler)  [![npm package](https://img.shields.io/npm/v/npmdoc-crawler.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-crawler) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-crawler.svg)](https://travis-ci.org/npmdoc/node-npmdoc-crawler)
 #### Crawler is a web spider written with Nodejs. It gives you the full power of jQuery on the server to parse a big number of pages as they are downloaded, asynchronously
 
-[![NPM](https://nodei.co/npm/crawler.png?downloads=true)](https://www.npmjs.com/package/crawler)
+[![NPM](https://nodei.co/npm/crawler.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/crawler)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-crawler/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-crawler_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-crawler/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-crawler/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-crawler/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-crawler/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-crawler/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-crawler/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
@@ -40,13 +42,13 @@
         "test": "tests"
     },
     "dist": {
-        "shasum": "a923a752d68097f2727a28e1352c44c05941cc60",
-        "tarball": "https://registry.npmjs.org/crawler/-/crawler-1.0.3.tgz"
+        "shasum": "6beb7106bde85817586575ef181be07c1c21efb3",
+        "tarball": "https://registry.npmjs.org/crawler/-/crawler-1.0.4.tgz"
     },
     "engine-strict": {
         "node": ">=4.0.0"
     },
-    "gitHead": "e7b8db60256e22bdd26907d7794b5677fa9afa5e",
+    "gitHead": "16e372b3aea52ab06ef21a39255067939a03a76b",
     "homepage": "https://github.com/bda-research/node-crawler",
     "keywords": [
         "dom",
@@ -68,25 +70,20 @@
     "main": "./lib/crawler.js",
     "maintainers": [
         {
-            "name": "darrenqc",
-            "email": "darrenqc823@gmail.com"
+            "name": "darrenqc"
         },
         {
-            "name": "mike442144",
-            "email": "mike442144@hotmail.com"
+            "name": "mike442144"
         },
         {
-            "name": "paulvalla",
-            "email": "bonjour@pol.ninja"
+            "name": "paulvalla"
         },
         {
-            "name": "sylvinus",
-            "email": "sylvain@sylvainzimmer.com"
+            "name": "sylvinus"
         }
     ],
     "name": "crawler",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/bda-research/node-crawler.git"
@@ -94,7 +91,7 @@
     "scripts": {
         "test": "./node_modules/mocha/bin/mocha --reporter spec --bail --timeout 10000 tests/*.js"
     },
-    "version": "1.0.3"
+    "version": "1.0.4"
 }
 ```
 
@@ -103,17 +100,51 @@
 # <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
 
 #### [module crawler](#apidoc.module.crawler)
+1.  [function <span class="apidocSignatureSpan"></span>crawler (options)](#apidoc.element.crawler.crawler)
 1.  [function <span class="apidocSignatureSpan">crawler.</span>super_ ()](#apidoc.element.crawler.super_)
+1.  [function <span class="apidocSignatureSpan">crawler.</span>toString ()](#apidoc.element.crawler.toString)
 
 
 
 # <a name="apidoc.module.crawler"></a>[module crawler](#apidoc.module.crawler)
+
+#### <a name="apidoc.element.crawler.crawler"></a>[function <span class="apidocSignatureSpan"></span>crawler (options)](#apidoc.element.crawler.crawler)
+- description and source-code
+```javascript
+function Crawler(options) {
+    var self = this;
+
+    options = options||{};
+    if(["onDrain", "preRequest","cache"].some(key => key in options)){
+	throw new Error("Support for 'onDrain', 'preRequest', 'cache' has been removed! For more details, see https://github.com/bda-research
+/node-crawler");
+    }
+
+    self.init(options);
+}
+```
+- example usage
+```shell
+n/a
+```
 
 #### <a name="apidoc.element.crawler.super_"></a>[function <span class="apidocSignatureSpan">crawler.</span>super_ ()](#apidoc.element.crawler.super_)
 - description and source-code
 ```javascript
 function EventEmitter() {
   EventEmitter.init.call(this);
+}
+```
+- example usage
+```shell
+n/a
+```
+
+#### <a name="apidoc.element.crawler.toString"></a>[function <span class="apidocSignatureSpan">crawler.</span>toString ()](#apidoc.element.crawler.toString)
+- description and source-code
+```javascript
+toString = function () {
+    return toString;
 }
 ```
 - example usage
