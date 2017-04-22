@@ -1,9 +1,14 @@
-# api documentation for  [crawler (v1.0.4)](https://github.com/bda-research/node-crawler)  [![npm package](https://img.shields.io/npm/v/npmdoc-crawler.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-crawler) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-crawler.svg)](https://travis-ci.org/npmdoc/node-npmdoc-crawler)
+# npmdoc-crawler
+
+#### api documentation for  [crawler (v1.0.4)](https://github.com/bda-research/node-crawler)  [![npm package](https://img.shields.io/npm/v/npmdoc-crawler.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-crawler) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-crawler.svg)](https://travis-ci.org/npmdoc/node-npmdoc-crawler)
+
 #### Crawler is a web spider written with Nodejs. It gives you the full power of jQuery on the server to parse a big number of pages as they are downloaded, asynchronously
 
 [![NPM](https://nodei.co/npm/crawler.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/crawler)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-crawler/build/screenCapture.buildCi.browser.apidoc.html.png)](https://npmdoc.github.io/node-npmdoc-crawler/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-crawler/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-crawler/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-crawler/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-crawler/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-crawler/build/screenCapture.npmPackageListing.svg)
 
@@ -91,65 +96,9 @@
     "scripts": {
         "test": "./node_modules/mocha/bin/mocha --reporter spec --bail --timeout 10000 tests/*.js"
     },
-    "version": "1.0.4"
+    "version": "1.0.4",
+    "bin": {}
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module crawler](#apidoc.module.crawler)
-1.  [function <span class="apidocSignatureSpan"></span>crawler (options)](#apidoc.element.crawler.crawler)
-1.  [function <span class="apidocSignatureSpan">crawler.</span>super_ ()](#apidoc.element.crawler.super_)
-1.  [function <span class="apidocSignatureSpan">crawler.</span>toString ()](#apidoc.element.crawler.toString)
-
-
-
-# <a name="apidoc.module.crawler"></a>[module crawler](#apidoc.module.crawler)
-
-#### <a name="apidoc.element.crawler.crawler"></a>[function <span class="apidocSignatureSpan"></span>crawler (options)](#apidoc.element.crawler.crawler)
-- description and source-code
-```javascript
-function Crawler(options) {
-    var self = this;
-
-    options = options||{};
-    if(["onDrain", "preRequest","cache"].some(key => key in options)){
-	throw new Error("Support for 'onDrain', 'preRequest', 'cache' has been removed! For more details, see https://github.com/bda-research
-/node-crawler");
-    }
-
-    self.init(options);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.crawler.super_"></a>[function <span class="apidocSignatureSpan">crawler.</span>super_ ()](#apidoc.element.crawler.super_)
-- description and source-code
-```javascript
-function EventEmitter() {
-  EventEmitter.init.call(this);
-}
-```
-- example usage
-```shell
-n/a
-```
-
-#### <a name="apidoc.element.crawler.toString"></a>[function <span class="apidocSignatureSpan">crawler.</span>toString ()](#apidoc.element.crawler.toString)
-- description and source-code
-```javascript
-toString = function () {
-    return toString;
-}
-```
-- example usage
-```shell
-n/a
 ```
 
 
