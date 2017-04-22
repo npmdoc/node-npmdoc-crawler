@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/bda-research/node-crawler"
-
-    >crawler (v1.0.4)</a>
+    <a href="https://github.com/bda-research/node-crawler">crawler (v1.0.4)</a>
 </h1>
 <h4>Crawler is a web spider written with Nodejs. It gives you the full power of jQuery on the server to parse a big number of pages as they are downloaded, asynchronously</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.crawler">module crawler</a><ol>
 
@@ -98,9 +91,9 @@
     var self = this;
 
     options = options||{};
-    if([&#x22;onDrain&#x22;, &#x22;preRequest&#x22;,&#x22;cache&#x22;].some(key =&#x3e; key in options)){
-	throw new Error(&#x22;Support for &#x27;onDrain&#x27;, &#x27;preRequest&#x27;, &#x27;cache&#x27; has been removed! For more details, see https://github.com/bda-research
-/node-crawler&#x22;);
+    if(["onDrain", "preRequest","cache"].some(key =&gt; key in options)){
+	throw new Error("Support for 'onDrain', 'preRequest', 'cache' has been removed! For more details, see https://github.com/bda-research
+/node-crawler");
     }
 
     self.init(options);
@@ -132,3 +125,4 @@
     ]
 </div>
 </div>
+</body></html>
